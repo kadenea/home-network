@@ -36,8 +36,6 @@ And the IP interface configuration:
 
 <img width="823" height="517" alt="Screenshot 2025-10-19 124211" src="https://github.com/user-attachments/assets/ffb48e0e-df4f-4637-98f3-da9a2f648d04" />
 
-
-
 I then assigned the IP address and subnet mask on my laptop, configured the trunk port on the switch to f0/1, and began configuration of subinterfaces g0/0.10 and g0/0.20 on the router using "encapsulation dot1q" to allow the for the VLANs to share the same physical interface.
 
 <img width="809" height="373" alt="Screenshot 2025-10-19 124442" src="https://github.com/user-attachments/assets/58fa7085-83cb-4e78-b39b-0cd91cc88ca6" />
@@ -57,3 +55,7 @@ After this I was then able to ping through the network to VLAN 20 on the switch 
 This is what the physical network looked like after completion: 
 
 ![IMG_2954](https://github.com/user-attachments/assets/3d0a1def-889e-49b3-9834-c79052267d4d)
+
+### Final Thoughts
+
+Looking back after completing this first step in this project, I belive the process went very smoothly. Planning and testing everything beforehand definitely helped this greatly. The actually implementation felt very easy after I had already run through it before. Other than the speed bump with the default gateway which I had corrected reltively quickly, there were almost no other issues. One of the biggest difficulties with this stage was the initial setup as it was pretty tedious. I had to make sure I had a console cable with a USB port, a USB-A to USB-C adapter, a RJ-45 to USB-C adapter, and the PuTTY software correctly installed. 
