@@ -32,3 +32,25 @@ Here is the VLAN configuration:
 
 <img width="900" height="563" alt="image" src="https://github.com/user-attachments/assets/e835d55e-1344-4f9f-9943-d87ef274ca12" />
 
+And the IP interface configuration:
+
+<img width="823" height="517" alt="Screenshot 2025-10-19 124211" src="https://github.com/user-attachments/assets/ffb48e0e-df4f-4637-98f3-da9a2f648d04" />
+
+
+
+I then assigned the IP address and subnet mask on my laptop, configured the trunk port on the switch to f0/1, and began configuration of subinterfaces g0/0.10 and g0/0.20 on the router using "encapsulation dot1q" to allow the for the VLANs to share the same physical interface.
+
+<img width="809" height="373" alt="Screenshot 2025-10-19 124442" src="https://github.com/user-attachments/assets/58fa7085-83cb-4e78-b39b-0cd91cc88ca6" />
+
+<img width="804" height="153" alt="Screenshot 2025-10-19 125018" src="https://github.com/user-attachments/assets/f2ef08c4-219e-4ae6-9926-d5a85b6c6030" />
+
+After this I attempted to ping the subinterface g0/0.10 from the laptop unsuccessufully. I compared the running configuration on both the switch and router to my working packet tracer and found that both configuration were the same according to the addressing table and all neccessary interface were labeled as "UP". So I then checked the configuration on my laptop and found that I had not configured a default gateway. So I assigned it to the g0/0.10 interface on the router and was able to recieve a reply back.
+
+<img width="620" height="941" alt="Screenshot 2025-10-19 141806" src="https://github.com/user-attachments/assets/d556c3a4-a6d5-4afb-8803-74e69334b666" />
+
+<img width="1475" height="526" alt="Screenshot 2025-10-19 130024" src="https://github.com/user-attachments/assets/5c58843a-84d0-483d-81dd-cf49fcfaaa1f" />
+
+After this I was then able to ping through the network to VLAN 20 on the switch and has successfully configured both VLANs along with inter-VLAN routing using subinterfaces on the router.
+
+<img width="1476" height="753" alt="Screenshot 2025-10-19 130846" src="https://github.com/user-attachments/assets/2c614a29-f469-4f1e-84ee-d752e28ef2dc" />
+
