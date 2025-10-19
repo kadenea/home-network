@@ -54,3 +54,6 @@ After this I was then able to ping through the network to VLAN 20 on the switch 
 
 <img width="1476" height="753" alt="Screenshot 2025-10-19 130846" src="https://github.com/user-attachments/assets/2c614a29-f469-4f1e-84ee-d752e28ef2dc" />
 
+This is what the physical network looked like after completion: 
+
+![IMG_2954](https://github.com/user-attachments/assets/3d0a1def-889e-49b3-9834-c79052267d4d)
