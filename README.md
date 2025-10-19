@@ -17,3 +17,18 @@ The network will be congigured using this routing table:
 The completed and fully functional Packet Tracer topology:
 
 <img width="446" height="457" alt="image" src="https://github.com/user-attachments/assets/c55dbddd-5656-422d-b483-24fcedec8f80" />
+
+## Implementation
+
+Now that I have an addressing table and working simulation I am ready to implement this into my home network. For this I will be using my Cisco Catalyst 2960 switch, Cisco 2911 Router, and my personal laptop running Windows.
+
+I began by physically configuring by hardware by attactching a Cat 6 ethernet cable from G0/0 on the router to F0/1 on my switch. I then attatched one from F0/9 on the switch, through an RJ-45 adapter that connected to my laptop. And finally one more cable from F0/13 to what would typically be a desktop computer that I did not have on hand this day.
+
+After that, I configured VLANs 10 and 20 on the switch following the same addressing scheme seen in the addressing table and assigned interfaces f0/9-12 to VLAN 10 and interfaces f0/13-16 to VLAN 20.
+
+<img width="823" height="518" alt="Screenshot 2025-10-19 123834" src="https://github.com/user-attachments/assets/67e0750a-ced7-451a-8f44-e8f3caa79ce7" />
+
+Here is the VLAN configuration:
+
+<img width="900" height="563" alt="image" src="https://github.com/user-attachments/assets/e835d55e-1344-4f9f-9943-d87ef274ca12" />
+
