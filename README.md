@@ -4,7 +4,7 @@ In this project, I will be setting up a small network at my home using Cisco pri
 
 ## Initial Planning
 
-Here, I will be creating my initial plan for my network. This primarily consists of creating an addressing table and configuring it in a packet tracer simulation to verify that it will work before implementing any changes.
+Here, I will be creating my initial plan for my network. This primarily consists of creating an addressing table and configuring it in a Packet Tracer simulation to verify that it will work before implementing any changes.
 
 ### Stage 1 - VLANs and Router-on-a-Stick
 
@@ -13,3 +13,7 @@ This Cisco network consists of a single switch, a router configured using the ro
 The network will be congigured using this routing table:
 
 <img width="509" height="169" alt="image" src="https://github.com/user-attachments/assets/86306cf0-a471-4ab2-9f70-25d93cb2034d" />
+
+The completed and fully functional Packet Tracer topology:
+
+<img width="446" height="457" alt="image" src="https://github.com/user-attachments/assets/c55dbddd-5656-422d-b483-24fcedec8f80" />
