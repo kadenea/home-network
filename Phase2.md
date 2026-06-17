@@ -11,3 +11,5 @@ I then began brainstorming the topology I wanted to use. I have not yet connecte
 I settled on a multi-group HSRP architecture. This involves the switches being fully meshed with the routers and each other, providing maximum redundancy with little extra cost. I will have one HSRP group for each VLAN on the routers. R1 will act as the gateway for the users (VLAN 10) and R2 will act as the gateway for the servers (VLAN 20). This separates the traffic from each VLAN so each router gets utilized and traffic is load balances across each to maximize performance. 
 
 <img width="405" height="347" alt="image" src="https://github.com/user-attachments/assets/1cdc3385-92c5-46fc-851d-b27f3427e3cc" />
+
+<img width="1286" height="167" alt="Screenshot 2026-06-16 184336" src="https://github.com/user-attachments/assets/535ce30d-ba6d-4b29-9a73-8b916cde0f15" />
