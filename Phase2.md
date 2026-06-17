@@ -14,6 +14,8 @@ I settled on a multi-group HSRP architecture. This involves the switches being f
 
 <img width="405" height="347" alt="image" src="https://github.com/user-attachments/assets/1cdc3385-92c5-46fc-851d-b27f3427e3cc" />
 
-Also, in order to avoid the physical port limitations of the traditional Router-on-a-Stick topology, I configured Bridge Virtual Interfaces (BVIs) on the routers to bundle subinterfaces into unified Layer 3 logical domains. I also wanted to align each switch Also, given that each VLAN is assigned to different physical gateways an
+Also, in order to avoid the physical port limitations of the traditional Router-on-a-Stick topology, I configured Bridge Virtual Interfaces (BVIs) on the routers to bundle subinterfaces into unified Layer 3 logical domains. I also wanted to align my users onto S1 and servers onto S2. This will make troubleshooting and traffic patterns more simple. Because of this alignment, I used Per VLAN Spanning-Tree (PVST+) for loop prevention and optimal pathing where S1 serves as the PVST+ root for VLAN 1 and S2 serves as the root for VLAN 20. 
+
+After this, I was largely finished with the overall configuration plan and created the addressing scheme for the network.
 
 <img width="1286" height="167" alt="Screenshot 2026-06-16 184336" src="https://github.com/user-attachments/assets/535ce30d-ba6d-4b29-9a73-8b916cde0f15" />
